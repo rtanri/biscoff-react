@@ -1,0 +1,173 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*======== General CSS ==========*/
+
+.logo-name {
+    margin-top: 10px;
+    font-weight: 400;
+    color: black;
+    font-size: 1.5em;
+}
+
+.custom-nav-css {
+    padding: 0;
+}
+
+.navbar {
+    min-width: 1200px;
+}
+
+.footer-box {
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.grey-styling {
+    background-color: #dddddd;
+    color: black;
+}
+
+/*======== Mainpage CSS ==========*/
+
+$assetPath: './images';
+
+.mainpage-background {
+    background: url(#{$assetPath}/homepage-cover.jpg);
+    // background: url(#{$assetPath}/biscoff-about-image.jpeg);
+    min-height: 700px;
+    background-size: cover;
+    background-repeat: none;
+    height: 100%;
+    position: relative;
+}
+
+.welcome-message-box {
+    position: absolute;
+    color: white;
+    top: 100px;
+    left: 150px;
+    font-family: Helvetica, sans-serif;
+}
+
+.message-lines {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2em;
+}
+
+/*======== About page ==========*/
+
+.main-column {
+    min-width: 1200px;
+}
+
+.about-image {
+    width: 100%;
+}
+
+.div-column {
+    padding-right: 0;
+}
+
+.about-message-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 5px 50px 0 50px;
+    align-items: center;
+    min-width: 500px;
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}
+
+/*======== Contact page ==========*/
+
+.form-control {
+    min-width: 400px;
+}
+
+//
+
+.card {
+    max-width: 300px;
+    margin: 20px;
+}
+.card-img-top {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/* ========= Product page ========== */
+.card-link {
+    color: black;
+    text-decoration: none;
+}
+
+.card-link :hover {
+    color: chocolate;
+    text-decoration: none;
+}
+
+.product-title-modal {
+    color: chocolate;
+    font-weight: 700;
+}
+
+.card-model-flexbox {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        margin-left: 30px;
+    }
+
+    .card-model-detail {
+        margin: 10px 30px 10px 40px;
+    }
+}
